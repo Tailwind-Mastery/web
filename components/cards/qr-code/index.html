@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Mastery</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="shortcut icon" href="../../../images/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="container antialiased mx-auto">
+
+        <header class="flex border-b p-2 items-center">
+           
+            <nav class="flex gap-2">
+                <a class="hover:text-blue-500 tracking-tight" href="../../../">
+                    Home
+                </a>
+                <span>/</span>
+                <a class="hover:text-blue-500 tracking-tight" href="../../">
+                    Components
+                </a>
+                <span>/</span>
+                <a class="hover:text-blue-500 tracking-tight" href="../">
+                    Cards
+                </a>
+                <span>/</span>
+                <a class="text-blue-500 font-medium tracking-tight" href="./">
+                    2 - QR Code Card Component
+                </a>
+            </nav>
+
+        </header>
+
+        <main class="flex flex-col items-center gap-5 py-5">
+
+            <h1 class="font-serif md:text-2xl text-xl mx-4 text-center lining-nums">
+                2 - QR Code Card Component
+            </h1>
+        
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
+                <div class="flex flex-col gap-2 p-3 rounded-md bg-white shadow-lg w-52">
+                    <img src="code.png" alt="code" class="object-cover rounded-md">
+                    <h2 class="font-medium text-sm text-center">
+                        Scan your QR Code to get various types of oppurtinites
+                    </h2>
+                    <p class="text-slate-500 text-xs tracking-tight text-center">
+                        Scan the QR Code to visit Your Personal Website and make your life Easy And Quick !
+                    </p>
+                </div>
+                <div class="flex flex-col gap-2 p-3 rounded-md bg-gradient-to-br from-blue-500 to-blue-600 shadow-lg w-52">
+                    <img src="code.png" alt="code" class="object-cover rounded-md">
+                    <h2 class="font-medium text-sm text-center text-white">
+                        Scan your QR Code to get various types of oppurtinites
+                    </h2>
+                    <p class="text-white/75 text-xs tracking-tight text-center">
+                        Scan the QR Code to visit Your Personal Website and make your life Easy And Quick !
+                    </p>
+                </div>
+            </div>
+        
+        
+        </main>
+
+        
+    </div>
+</body>
+</html>
