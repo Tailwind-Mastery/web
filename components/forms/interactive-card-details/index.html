@@ -224,18 +224,34 @@
         const form2 = document.querySelector('#form-2');
         const form2Btn = document.querySelector('#form-2-btn');
         const form2BtnBack = document.querySelector('#form-2-btn-back');
-
         let state1 = false
         let state2 = false
         
         function toggleClass1(){
-            console.log(form1)
-            if(state1){
-
+            if(!state1){
+                form1.children[0].classList.add('hidden')
+                form1.children[1].classList.remove('hidden')
+            } else {
+                form1.children[0].classList.remove('hidden')
+                form1.children[1].classList.add('hidden')
             }
+            state1 = !state1
+        }
+        function toggleClass2(){
+            if(!state2){
+                form2.children[0].classList.add('hidden')
+                form2.children[1].classList.remove('hidden')
+            } else {
+                form2.children[0].classList.remove('hidden')
+                form2.children[1].classList.add('hidden')
+            }
+            state2 = !state2
         }
 
         form1Btn.addEventListener('click', toggleClass1);
+        form1BtnBack.addEventListener('click', toggleClass1);
+        form2Btn.addEventListener('click', toggleClass2);
+        form2BtnBack.addEventListener('click', toggleClass2);
         
     </script>
 </body>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Mastery</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="shortcut icon" href="../../../images/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="container antialiased mx-auto">
+
+        <header class="flex border-b p-2 items-center">
+           
+            <nav class="flex gap-2">
+                <a class="hover:text-blue-500 tracking-tight" href="../../../">
+                    Home
+                </a>
+                <span>/</span>
+                <a class="hover:text-blue-500 tracking-tight" href="../../">
+                    Components
+                </a>
+                <span>/</span>
+                <a class="hover:text-blue-500 tracking-tight" href="../">
+                    Landing Pages
+                </a>
+                <span>/</span>
+                <a class="text-blue-500 font-medium tracking-tight" href="./">
+                    Landing Page One
+                </a>
+            </nav>
+
+        </header>
+
+        <main class="flex flex-col items-center gap-5 py-5">
+
+            <h1 class="font-serif md:text-2xl text-xl mx-4 text-center lining-nums">
+                Landing Page One
+            </h1>
+        
+            <div class="flex flex-col h-screen relative w-full" id="landing-1">
+                <img src="landing1.jpg" alt="landing-1" class="object-cover w-full h-full absolute">
+        
+                <div class="flex md:justify-between md:flex-row gap-5 flex-col bg-gradient-to-b from-black/50 via-black/20 backdrop-blur-lg px-5 pt-5 pb-2 sticky top-0 w-full">
+        
+                    <a href="./">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 stroke-white homeLogo">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
+                        </svg>
+                    </a>
+                    
+                    <nav class="rounded-full px-5 py-2 border border-white flex gap-2 relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                        <input type="text" class="bg-transparent outline-none text-sm text-white caret-white placeholder:text-white/75 searchInput" placeholder="search ..." id="input-1">
+                        
+                        <div class="flex divide-y gap-1 justify-center flex-col absolute w-5/6 top-10 text-black bg-white cursor-pointer hidden" id="landing-1-btns">
+                            <button type="button" class="outline-none p-2 hover:text-white hover:bg-slate-800 text-left">Landing page 1</button>
+                            <button type="button" class="outline-none p-2 hover:text-white hover:bg-slate-800 text-left">Landing page 2</button>
+                            <button type="button" class="outline-none p-2 hover:text-white hover:bg-slate-800 text-left">Landing page 3</button>
+                            <button type="button" class="outline-none p-2 hover:text-white hover:bg-red-500">Hide Search</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        
+            <div class="flex flex-col h-screen relative w-full" id="landing-2">
+                <img src="landing2.jpg" alt="landing-2" class="object-cover w-full h-full absolute">
+        
+                <div class="flex md:justify-between md:flex-row gap-5 flex-col bg-gradient-to-b from-black/50 via-black/20 backdrop-blur-lg px-5 pt-5 pb-2 sticky top-0 w-full">
+        
+                    <a href="./">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 stroke-white homeLogo">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
+                        </svg>
+                    </a>
+                    
+                    <nav class="rounded-full px-5 py-2 border border-white flex gap-2 relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                        <input type="text" class="bg-transparent outline-none text-sm text-white caret-white placeholder:text-white/75 searchInput" placeholder="search ..." id="input-2">
+                        
+                        <div class="flex divide-y gap-1 justify-center flex-col absolute w-5/6 top-10 text-black bg-white cursor-pointer hidden" id="landing-2-btns">
+                            <button type="button" class="outline-none p-2 hover:text-white hover:bg-slate-800 text-left">Landing page 1</button>
+                            <button type="button" class="outline-none p-2 hover:text-white hover:bg-slate-800 text-left">Landing page 2</button>
+                            <button type="button" class="outline-none p-2 hover:text-white hover:bg-slate-800 text-left">Landing page 3</button>
+                            <button type="button" class="outline-none p-2 hover:text-white hover:bg-red-500">Hide Search</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        
+            <div class="flex flex-col h-screen relative w-full" id="landing-3">
+                <img src="landing3.jpg" alt="landing-3" class="object-cover w-full h-full absolute">
+        
+                <div class="flex md:justify-between md:flex-row gap-5 flex-col bg-gradient-to-b from-black/50 via-black/20 backdrop-blur-lg px-5 pt-5 pb-2 sticky top-0 w-full">
+        
+                    <a href="./">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 stroke-white homeLogo">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
+                        </svg>
+                    </a>
+                    
+                    <nav class="rounded-full px-5 py-2 border border-white flex gap-2 relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                        <input type="text" class="bg-transparent outline-none text-sm text-white caret-white placeholder:text-white/75 searchInput" placeholder="search ..." id="input-3">
+                        
+                        <div class="flex divide-y gap-1 justify-center flex-col absolute w-5/6 top-10 text-black bg-white cursor-pointer hidden" id="landing-3-btns">
+                            <button type="button" class="outline-none p-2 hover:text-white hover:bg-slate-800 text-left">Landing page 1</button>
+                            <button type="button" class="outline-none p-2 hover:text-white hover:bg-slate-800 text-left">Landing page 2</button>
+                            <button type="button" class="outline-none p-2 hover:text-white hover:bg-slate-800 text-left">Landing page 3</button>
+                            <button type="button" class="outline-none p-2 hover:text-white hover:bg-red-500">Hide Search</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        
+        
+        </main>
+
+        
+    </div>
+
+    <script defer>
+
+        const landing1 = document.querySelector('#landing-1')
+        const landing2 = document.querySelector('#landing-2')
+        const landing3 = document.querySelector('#landing-3')
+        const landing1Btns = document.querySelector('#landing-1-btns')
+        const landing2Btns = document.querySelector('#landing-2-btns')
+        const landing3Btns = document.querySelector('#landing-3-btns')
+        const input1 = document.querySelector('#input-1')
+        const input2 = document.querySelector('#input-2')
+        const input3 = document.querySelector('#input-3')
+
+        function moveToId(id) {
+            if(id === 0) {
+                landing1.scrollIntoView();
+            } else if (id === 1) {
+                landing2.scrollIntoView();
+            } else {
+                landing3.scrollIntoView();
+            }
+        }
+        
+        for(let i = 0; i < 3; i++){
+            landing1Btns.children[i].addEventListener('click', (id)=> moveToId(i) )
+            landing2Btns.children[i].addEventListener('click', (id)=> moveToId(i) )
+            landing3Btns.children[i].addEventListener('click', (id)=> moveToId(i) )
+        }
+
+        function toggleBtns(id, status = null) {
+            
+            if(status === 'show') {
+                if(id === 1) {
+                    landing1Btns.classList.remove('hidden');
+                } else if(id === 2) {
+                    landing2Btns.classList.remove('hidden');
+                } else {
+                    landing3Btns.classList.remove('hidden');
+                }
+            } else {
+                if(id === 1) {
+                    landing1Btns.classList.add('hidden');
+                } else if(id === 2) {
+                    landing2Btns.classList.add('hidden');
+                } else {
+                    landing3Btns.classList.add('hidden');
+                }
+            }
+        }
+
+        input1.addEventListener('focus', ()=> toggleBtns(1, 'show'))
+        input2.addEventListener('focus', ()=> toggleBtns(2, 'show'))
+        input3.addEventListener('focus', ()=> toggleBtns(3, 'show'))
+        landing1Btns.children[3].addEventListener('click', ()=> toggleBtns(1) )
+        landing2Btns.children[3].addEventListener('click', ()=> toggleBtns(2) )
+        landing3Btns.children[3].addEventListener('click', ()=> toggleBtns(3) )
+        
+    </script>
+</body>
+</html>
