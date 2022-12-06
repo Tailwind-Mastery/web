@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Mastery</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="shortcut icon" href="../../../images/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="container antialiased mx-auto">
+
+        <header class="flex border-b p-2 items-center">
+           
+            <nav class="flex gap-2">
+                <a class="hover:text-blue-500 tracking-tight" href="../../../">
+                    Home
+                </a>
+                <span>/</span>
+                <a class="hover:text-blue-500 tracking-tight" href="../../">
+                    Components
+                </a>
+                <span>/</span>
+                <a class="hover:text-blue-500 tracking-tight" href="../">
+                    Cards
+                </a>
+                <span>/</span>
+                <a class="text-blue-500 font-medium tracking-tight" href="./">
+                    Order Summary Component
+                </a>
+            </nav>
+
+        </header>
+
+        <main class="flex flex-col items-center gap-5 py-5">
+
+            <h1 class="font-serif md:text-2xl text-xl mx-4 text-center lining-nums">
+                Order Summary Component
+            </h1>
+        
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
+                
+                <div class="rounded-xl box-shadow shadow-xl overflow-hidden w-80">
+        
+                    <img src="hero.svg" alt="hero" class="object-cover h-40 w-full">
+                    
+                    <div class="px-5 pt-10 pb-5 flex flex-col gap-5">
+                        <h2 class="text-center font-bold text-2xl tracking-tight text-slate-700">
+                            Order Summary
+                        </h2>
+        
+                        <p class="text-sm text-slate-500 text-center">
+                            You can now listen to millions of songs, audiobooks and podcasts on any device anywhere you like!
+                        </p>
+        
+                        <div class="flex bg-slate-100 p-3 justify-between items-center rounded">
+                            
+                            <div class="flex gap-3 items-center">
+                                <img src="icon-music.svg" alt="icon" class="h-10">
+        
+                                <div class="flex flex-col gap-0.5">
+                                    <h3 class="font-bold tracking-tight text-sm text-slate-700">
+                                        Annual Plan
+                                    </h3>
+                                    <p class="text-sm text-slate-400 lining-nums font-medium">
+                                        $59.99/year
+                                    </p>
+                                </div>
+                            </div>
+        
+                            <a class="text-xs font-bold underline underline-indigo-900 text-indigo-900 tracking-wide cursor-pointer">Change</a>
+                        </div>
+        
+                        <button type="button" class="bg-indigo-700 text-white text-center py-2 rounded text-sm font-medium hover:bg-indigo-600">
+                            Proceed to Payment
+                        </button>
+        
+                        <a class="text-sm font-semibold text-center text-slate-500 cursor-pointer">Cancel Order</a>
+                        
+                    </div>
+                    
+                </div>
+                        
+                <div class="rounded-xl box-shadow shadow-xl overflow-hidden w-80">
+        
+                    <img src="order.jpg" alt="order" class="object-cover h-40 w-full">
+        
+                    <div class="px-5 pt-10 pb-5 flex flex-col gap-5">
+                        <h2 class="text-center font-bold text-2xl tracking-tight text-slate-700">
+                            Order Summary
+                        </h2>
+        
+                        <p class="text-sm text-slate-500 text-center">
+                            You can now listen to millions of songs, audiobooks and podcasts on any device anywhere you like!
+                        </p>
+        
+                        <div class="flex bg-slate-100 p-3 justify-between items-center rounded">
+                            
+                            <div class="flex gap-3 items-center">
+                                <img src="icon-music.svg" alt="icon" class="h-10">
+        
+                                <div class="flex flex-col gap-0.5">
+                                    <h3 class="font-bold tracking-tight text-sm text-slate-700">
+                                        Annual Plan
+                                    </h3>
+                                    <p class="text-sm text-slate-400 lining-nums font-medium">
+                                        $59.99/year
+                                    </p>
+                                </div>
+                            </div>
+        
+                            <a class="text-xs font-bold underline underline-cyan-900 text-cyan-900 tracking-wide cursor-pointer">Change</a>
+                        </div>
+        
+                        <button type="button" class="bg-cyan-700 text-white text-center py-2 rounded text-sm font-medium hover:bg-cyan-600">
+                            Proceed to Payment
+                        </button>
+        
+                        <a class="text-sm font-semibold text-center text-slate-500 cursor-pointer">Cancel Order</a>
+                        
+                    </div>
+        
+                </div>
+                        
+                <div class="rounded-xl box-shadow shadow-xl overflow-hidden w-80">
+        
+                    <img src="leaves.jpg" alt="leaves" class="object-cover h-40 w-full">
+        
+                    <div class="px-5 pt-10 pb-5 flex flex-col gap-5">
+                        <h2 class="text-center font-bold text-2xl tracking-tight text-slate-700">
+                            Order Summary
+                        </h2>
+        
+                        <p class="text-sm text-slate-500 text-center">
+                            You can now listen to millions of songs, audiobooks and podcasts on any device anywhere you like!
+                        </p>
+        
+                        <div class="flex bg-slate-100 p-3 justify-between items-center rounded">
+                            
+                            <div class="flex gap-3 items-center">
+                                <img src="icon-music.svg" alt="icon" class="h-10">
+        
+                                <div class="flex flex-col gap-0.5">
+                                    <h3 class="font-bold tracking-tight text-sm text-slate-700">
+                                        Annual Plan
+                                    </h3>
+                                    <p class="text-sm text-slate-400 lining-nums font-medium">
+                                        $59.99/year
+                                    </p>
+                                </div>
+                            </div>
+        
+                            <a class="text-xs font-bold underline underline-red-900 text-red-900 tracking-wide cursor-pointer">Change</a>
+                        </div>
+        
+                        <button type="button" class="bg-red-700 text-white text-center py-2 rounded text-sm font-medium hover:bg-red-600">
+                            Proceed to Payment
+                        </button>
+        
+                        <a class="text-sm font-semibold text-center text-slate-500 cursor-pointer">Cancel Order</a>
+                        
+                    </div>
+        
+                </div>
+                             
+                <div class="rounded-xl box-shadow shadow-xl overflow-hidden w-80">
+        
+                    <img src="umbrella.jpg" alt="umbrella" class="object-cover h-40 w-full">
+        
+                    <div class="px-5 pt-10 pb-5 flex flex-col gap-5">
+                        <h2 class="text-center font-bold text-2xl tracking-tight text-slate-700">
+                            Order Summary
+                        </h2>
+        
+                        <p class="text-sm text-slate-500 text-center">
+                            You can now listen to millions of songs, audiobooks and podcasts on any device anywhere you like!
+                        </p>
+        
+                        <div class="flex bg-slate-100 p-3 justify-between items-center rounded">
+                            
+                            <div class="flex gap-3 items-center">
+                                <img src="icon-music.svg" alt="icon" class="h-10">
+        
+                                <div class="flex flex-col gap-0.5">
+                                    <h3 class="font-bold tracking-tight text-sm text-slate-700">
+                                        Annual Plan
+                                    </h3>
+                                    <p class="text-sm text-slate-400 lining-nums font-medium">
+                                        $59.99/year
+                                    </p>
+                                </div>
+                            </div>
+        
+                            <a class="text-xs font-bold underline underline-blue-900 text-blue-900 tracking-wide cursor-pointer">Change</a>
+                        </div>
+        
+                        <button type="button" class="bg-blue-700 text-white text-center py-2 rounded text-sm font-medium hover:bg-blue-600">
+                            Proceed to Payment
+                        </button>
+        
+                        <a class="text-sm font-semibold text-center text-slate-500 cursor-pointer">Cancel Order</a>
+                        
+                    </div>
+        
+                </div>
+                
+            </div>
+        
+        
+        </main>
+
+
+        
+    </div>
+</body>
+</html>
