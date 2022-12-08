@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Mastery</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="shortcut icon" href="../../../images/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="container antialiased mx-auto">
+
+        <header class="flex border-b p-2 items-center">
+           
+            <nav class="flex gap-2 flex-wrap">
+                <a class="hover:text-blue-500 tracking-tight" href="../../../">
+                    Home
+                </a>
+                <span>/</span>
+                <a class="hover:text-blue-500 tracking-tight" href="../../">
+                    Components
+                </a>
+                <span>/</span>
+                <a class="hover:text-blue-500 tracking-tight" href="../">
+                    Accordians
+                </a>
+                <span>/</span>
+                <a class="text-blue-500 font-medium tracking-tight" href="./">
+                    FAQ accordion card
+                </a>
+            </nav>
+
+        </header>
+
+        <main class="flex flex-col items-center gap-5 py-5">
+
+            <h1 class="font-serif md:text-2xl text-xl mx-4 text-center">
+                FAQ accordion card
+            </h1>
+
+            <div class="flex md:flex-row flex-col gap-5 md:p-10 p-2.5 md:box-shadow md:shadow-xl md:rounded-xl items-center border max-w-3xl">
+
+                <div class="flex md:w-1/2 relative md:h-[25rem]">
+                    <div class="flex items-center">
+                        <!-- <img src="box.svg" alt="box.svg" class="border h-24"> -->
+                        <img src="woman.svg" alt="woman.svg" class="object-contain md:w-[40rem] w-72">
+
+                    </div>
+                    
+                    <img src="pattern.svg" alt="pattern" class="absolute top-0 w-full h-full object-cover">
+                </div>
+
+                <div class="flex flex-col md:w-1/2 gap-5">
+
+                    <h2 class="text-2xl font-bold tracking-wide md:text-left text-center">
+                        FAQ
+                    </h2>
+
+                    <div class="flex flex-col" id="faqs">
+
+                        <div class="p-2 border-b-2 flex flex-col gap-1 cursor-pointer">
+                            <div class="flex justify-between items-center gap-5">
+                                <p class="text-slate-500 tracking-tight">
+                                    How many team members can I invite ?
+                                </p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-violet-700 transition">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                                </svg>
+                            </div>
+                            <p class="text-slate-500 tracking-tight text-sm hidden">
+                                Upto 99 members can be invited into our corporation.
+                            </p>
+                        </div>
+
+                        <div class="p-2 border-b-2 flex flex-col gap-1 cursor-pointer">
+                            <div class="flex justify-between items-center gap-5">
+                                <p class="text-slate-500 tracking-tight">
+                                   What is maximum file upload size ?
+                                </p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-violet-700 transition">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                                </svg>
+                            </div>
+                            <p class="text-slate-500 tracking-tight text-sm hidden">
+                                File size can be upto 2 Gigabyte only.
+                            </p>
+                        </div>
+
+                        <div class="p-2 border-b-2 flex flex-col gap-1 cursor-pointer">
+                            <div class="flex justify-between items-center gap-5">
+                                <p class="text-slate-500 tracking-tight">
+                                   How do I reset my password ?
+                                </p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-violet-700 transition">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                                </svg>
+                            </div>
+                            <p class="text-slate-500 tracking-tight text-sm hidden">
+                                Rest passowrd using your provided email.
+                            </p>
+                        </div>
+
+                        <div class="p-2 border-b-2 flex flex-col gap-1 cursor-pointer">
+                            <div class="flex justify-between items-center gap-5">
+                                <p class="text-slate-500 tracking-tight">
+                                   Can I cancel my subscription ?
+                                </p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-violet-700 transition">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                                </svg>
+                            </div>
+                            <p class="text-slate-500 tracking-tight text-sm hidden">
+                                Subscriptions can be blocked via settings panel.
+                            </p>
+                        </div>
+ 
+                        
+                        <div class="p-2 border-b-2 flex flex-col gap-1 cursor-pointer">
+                            <div class="flex justify-between items-center gap-5">
+                                <p class="text-slate-500 tracking-tight">
+                                   Do you provide additional support ?
+                                </p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-violet-700 transition">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                                </svg>
+                            </div>
+                            <p class="text-slate-500 tracking-tight text-sm hidden">
+                                Additonal support services can be availed by our help ceenter.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+            
+            
+        </main>
+        
+    </div>      
+
+    <script defer>
+
+        const faqs = document.querySelector('#faqs')
+
+        function toggleFaq(id) {
+            faqs.children[id].children[0].children[0].classList.toggle('font-medium')
+            faqs.children[id].children[0].children[1].classList.toggle('rotate-180')
+            faqs.children[id].children[1].classList.toggle('hidden')
+        }
+
+        for(let i = 0; i < faqs.children.length; i++) {
+            faqs.children[i].addEventListener('click', ()=>toggleFaq(i))
+        }
+
+    </script>
+    
+</body>
+</html>
